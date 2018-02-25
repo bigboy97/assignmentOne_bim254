@@ -1,0 +1,25 @@
+{
+  "name": "assignmentone_bim254",
+  "version": "1.0.0",
+  "description": "This project demonstrates the use of css sudo selectors",
+  "main": "index.js",
+  "scripts": {
+    "sass-compiler": "node-sass src/scss/style.scss dest/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigboy97/assignmentOne_bim254.git"
+  },
+  "keywords": [
+    "bim254"
+  ],
+  "author": "Colin Hoffman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigboy97/assignmentOne_bim254/issues"
+  },
+  "homepage": "https://github.com/bigboy97/assignmentOne_bim254#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
