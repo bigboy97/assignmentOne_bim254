@@ -1,0 +1,70 @@
+body {
+  padding: 0;
+  margin: auto 10%; }
+
+[data-tooltip] {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-right: 500px; }
+
+section {
+  border-bottom: 5px dashed black; }
+  section:nth-child(even) {
+    background-color: lightgray; }
+  section > img {
+    width: 20rem;
+    height: 15rem; }
+  section:last-child {
+    border: none; }
+  section:nth-child(5) h2::after {
+    content: '(Gotta get a "C")';
+    font-size: small;
+    padding-left: .1rem;
+    font-weight: bold; }
+  section:nth-child(6) ul li:nth-child(odd) {
+    background-color: lightblue; }
+  section:nth-child(6) ul li:nth-child(even) {
+    background-color: white; }
+
+p::first-letter {
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: bolder; }
+
+.plain li:nth-child(even) {
+  background-color: white; }
+
+.plain li:nth-child(odd) {
+  background-color: lightblue; }
+
+h4, h5 {
+  font-weight: bold; }
+
+h5 {
+  font-size: large; }
+
+a[href="https://learn.pct.edu/catalog/majors/BIM#catalog_Curriculum"] {
+  font-size: larger;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+th {
+  background-color: darkblue;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  padding-right: .7rem; }
+
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: lightblue; }
+
+tr:nth-child(even) td:nth-child(even) {
+  background-color: white; }
+
+tr:nth-child(odd) td:nth-child(odd) {
+  background-color: white; }
+
+tr:nth-child(odd) td:nth-child(even) {
+  background-color: lightpink; }
