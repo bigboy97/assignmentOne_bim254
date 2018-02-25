@@ -9,12 +9,36 @@ body{
     padding: 0;
     margin: auto 10%;
 }
-[data-tooltip]{
-    background-color: $black;
-    color: $white;
-    text-align: center;
-    padding-right: 500px;
-}
+
+h1 a{
+    &.tooltip {
+        padding-right: 500px;
+        position: relative;
+        background: $black;
+        cursor: pointer;
+        color: $white;
+
+        &::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: 1.5em;
+            font-size: 0.9em;
+            padding: 1px 5px;
+            display: none;
+            color: $white;
+            background: $black;
+            border-radius: 4px;
+            transition: opacity 0.1s ease-out;
+            z-index: 99;
+            text-align: left;
+          }//END OF BEFORE
+      }//END OF TOOLTIP
+    &:hover{
+        &::before {
+            display: inline-block;
+        }
+    }
+}//END OF H1 A
 section{
     border-bottom: 5px dashed $black;
 
